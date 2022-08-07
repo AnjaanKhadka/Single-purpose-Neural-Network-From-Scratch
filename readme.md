@@ -60,7 +60,7 @@ This system is simplest form of neural network. Thus I have not implemented any 
 
 Every weights and biases changes on each generation. Each generation generates 500 bots. among last 500 generation, 100 best performing bots weight and biases are tweeked by small value at random thus random learning. There is an small chance of some bots being offspring of one of lower 400 bots.
 
-## requirements
+## Requirements
 
 Requirements of this project are listed in [requirements.txt](https://github.com/AnjaanKhadka/Single-purpose-Neural-Network-From-Scratch/blob/master/requirements.txt). To install all requirements execute following code.
 
