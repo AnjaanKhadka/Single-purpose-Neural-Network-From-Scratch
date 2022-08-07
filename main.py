@@ -452,6 +452,7 @@ def new_gen(bots, gen=0):
 
 def replay():
     bot_here=getStored_bot("High")
+    
     global best_bot
     global frame_optimize
     temp_frame=frame_optimize
@@ -461,6 +462,8 @@ def replay():
             if event.type == pygame.QUIT:
                 pygame.QUIT()
         draw_map()
+        text = font.render("Alive: " + str(bot_alive_count) + " Gen: " + str(gen_no)+" Best val: "+str(best_score), True, (0, 0, 0))
+        screen.blit(text, (150, 10))
         bot_here.update_layers()
         bot_here.draw_bot()
         bot_here.move(bot_here.get_direction())
@@ -474,7 +477,7 @@ for i in range(bot_count):
     bots.append(bot(input_l,layer1,layer2,output_l))
 bots_copy=copy.deepcopy(bots)
 running = True
-best_bot=getStored_bot()
+best_bot=getStored_bot("High")
 #new_gen(bots)
 if bots == bots_copy:
     running=False
@@ -501,6 +504,7 @@ while running:
         bots[i].move(move)
     bot_alive_count = are_available(bots)
     text = font.render("Alive: " + str(bot_alive_count) + " Gen: " + str(gen_no)+" Best val: "+str(best_score), True, (0, 0, 0))
+    
     screen.blit(text, (150, 10))
     if not bot_alive_count:
         gen_no += 1
