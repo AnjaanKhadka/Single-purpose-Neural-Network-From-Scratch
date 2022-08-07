@@ -52,7 +52,7 @@ This model uses Sigmoid activation function for all layers.
 
 ### Cost Function / Points system
 
-Cost of the bot is measured by calculating distance from next checkpoint. This model tries to maximize the points. after each checkpoint it adds 10000 points. 
+Cost of the bot is measured by calculating distance from next checkpoint. This model tries to maximize the points. after each checkpoint it adds 10000 points.
 
 ### Backpropagation and learning Process
 
@@ -62,11 +62,17 @@ Every weights and biases changes on each generation. Each generation generates 5
 
 ## Results
 
-I have trained for about 3 hours to 200 generations. But best run was from generation 129. because it is a random chance, learning peaked after 129 generations. Till this generation I could train to pass 1st checkpoint. This model could not find weights for passing 2nd checkpoint whatsoever. 
+I have trained for about 3 hours to 200 generations. But best run was from generation 139. because it is a random chance, learning peaked after 139 generations. Till this generation I could train to pass 1st checkpoint. This model could not find weights for passing 2nd checkpoint whatsoever.
+
+Result of Start of Training in generation2
 
 ![1st Result](https://github.com/AnjaanKhadka/Single-purpose-Neural-Network-From-Scratch/blob/master/Result_images/result1.png)
 
+Result of crossing 1st big obstacle generation 52
+
 ![2nd Result](https://github.com/AnjaanKhadka/Single-purpose-Neural-Network-From-Scratch/blob/master/Result_images/result2.png)
+
+Result of crossing 1st Checkpoint in generation 139
 
 ![3rd Result](https://github.com/AnjaanKhadka/Single-purpose-Neural-Network-From-Scratch/blob/master/Result_images/result3.png)
 
