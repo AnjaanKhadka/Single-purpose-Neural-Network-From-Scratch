@@ -60,6 +60,14 @@ This system is simplest form of neural network. Thus I have not implemented any 
 
 Every weights and biases changes on each generation. Each generation generates 500 bots. among last 500 generation, 100 best performing bots weight and biases are tweeked by small value at random thus random learning. There is an small chance of some bots being offspring of one of lower 400 bots.
 
+## requirements
+
+## Training
+
+To Train, clone this repo and execute following commmands
+
+    python main.py
+
 ## Results
 
 I have trained for about 3 hours to 200 generations. But best run was from generation 139. because it is a random chance, learning peaked after 139 generations. Till this generation I could train to pass 1st checkpoint. This model could not find weights for passing 2nd checkpoint whatsoever.
