@@ -62,6 +62,10 @@ Every weights and biases changes on each generation. Each generation generates 5
 
 ## requirements
 
+Requirements of this project are listed in [requirements.txt](https://github.com/AnjaanKhadka/Single-purpose-Neural-Network-From-Scratch/blob/master/requirements.txt). To install all requirements execute following code.
+
+    pip install -r requirements.txt
+
 ## Training
 
 To Train, clone this repo and execute following commmands
